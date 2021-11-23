@@ -21,11 +21,9 @@ imgread.jpgread()
 pngread()
 jpgread()
 
-
 # 4
 img.pngread()
 img.jpgread()
-
 
 # 5
 pread()
