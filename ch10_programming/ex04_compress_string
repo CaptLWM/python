@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+def compress_string(s):
+    _c = ""  # 'b'
+    cnt = 0  # 3
+    result = ""
+    for c in s:
+        if c != _c:
+            _c = c  # 'b'
+            if cnt:
+                result += str(cnt)
+            result += c  # 'a3b'
+            cnt = 1
+        else:
+            cnt += 1
+    if cnt:
+        result += str(cnt)
+    return result
+
+
+print(compress_string("aaabbbbccccccca"))
+# a3b4c7a1
