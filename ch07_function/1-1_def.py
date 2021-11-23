@@ -33,7 +33,7 @@ def my_calc(x,y):
     z = x * y
     return z
 
-print(my_calc(3,4))
+print(my_calc(3,4)) # 12
 
 def my_student_info_list(student_info):
     print("***************************")
