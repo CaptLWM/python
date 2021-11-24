@@ -43,7 +43,7 @@ print(df_KTX.values)
  [32427.  9228.  5570.  5766.  6667.]]
 '''
 
-print(df_KTX.head())
+print(df_KTX.head()) # 상위 5개 항목
 '''
       경부선 KTX  호남선 KTX  경전선 KTX  전라선 KTX  동해선 KTX
 2011    39060     7313     3627      309      NaN
@@ -53,7 +53,7 @@ print(df_KTX.head())
 2015    41702     8675     4606     3146   2395.0
 '''
 
-print(df_KTX.tail())
+print(df_KTX.tail()) # 하위 5개 항목
 '''
       경부선 KTX  호남선 KTX  경전선 KTX  전라선 KTX  동해선 KTX
 2013    42005     6873     4088     1954      NaN
@@ -138,7 +138,7 @@ print(df_KTX['경부선 KTX'][2:5])
 Name: 경부선 KTX, dtype: int64
 '''
 
-print(df_KTX.T)
+print(df_KTX.T) # table 전치
 '''
             2011     2012     2013     2014     2015     2016     2017
 경부선 KTX  39060.0  39896.0  42005.0  43621.0  41702.0  41266.0  32427.0     
@@ -160,7 +160,7 @@ print(df_KTX)
 2017    32427     9228     5570     5766   6667.0
 '''
 
-print(df_KTX[['동해선 KTX', '전라선 KTX', '경전선 KTX', '호남선 KTX', '경부선 KTX']])
+print(df_KTX[['동해선 KTX', '전라선 KTX', '경전선 KTX', '호남선 KTX', '경부선 KTX']]) # 순서 재설정
 '''
       동해선 KTX  전라선 KTX  경전선 KTX  호남선 KTX  경부선 KTX
 2011      NaN      309     3627     7313    39060
