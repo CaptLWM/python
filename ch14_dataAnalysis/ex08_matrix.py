@@ -22,4 +22,4 @@ print(A.transpose())
 
 # 행렬 A의 역행렬
 print(np.linalg.inv(A))
-print(np.linalg.det(A)) 
+print(np.linalg.det(A)) #-2.0 / 행렬식 구하는 함수, 0이면 역행렬이 없음

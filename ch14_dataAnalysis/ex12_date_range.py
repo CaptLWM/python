@@ -53,4 +53,9 @@ DatetimeIndex(['2019-01-01 08:00:00', '2019-01-01 09:00:00',
               dtype='datetime64[ns]', freq='H')
 '''
 
-print(pd.date_range(start='2019-01-01 08:00', periods=4, freq='30min'))
+print(pd.date_range(start='2019-01-01 08:00', periods=4, freq='30min')) # 30분 간격으로 4개
+'''
+DatetimeIndex(['2019-01-01 08:00:00', '2019-01-01 08:30:00',
+               '2019-01-01 09:00:00', '2019-01-01 09:30:00'],
+              dtype='datetime64[ns]', freq='30T')
+'''

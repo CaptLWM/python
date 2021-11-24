@@ -13,5 +13,11 @@ print(arr2 *2)
 print(arr1 * arr2)
 print(arr1 / arr2)
 print(arr1/(arr2 **2))
-
 print(arr1>10)
+'''
+[2 4 6 8]
+[ 10  40  90 160]
+[10. 10. 10. 10.]
+[10.          5.          3.33333333  2.5       ]
+[False  True  True  True]
+'''

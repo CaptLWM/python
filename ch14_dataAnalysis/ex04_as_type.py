@@ -23,7 +23,9 @@ print(num_a2.dtype) # int64
 
 num_f1 = np.array([10,21,0.53,123, 1.23])
 num_i1 = num_f1.astype(int)
-print(num_i1)
 
-print(num_f1.dtype)
-print(num_i1.dtype)
+print(num_i1)
+# [10  21   0 123   1]
+
+print(num_f1.dtype) # float64
+print(num_i1.dtype) # int64

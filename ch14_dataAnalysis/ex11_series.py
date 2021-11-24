@@ -47,5 +47,11 @@ print(s4)
 dtype: float64
 '''
 
-s5 = pd.Series({'국어':100, '영어':95, '수학':100})
+s5 = pd.Series({'국어':100, '영어':95, '수학':100}) # key값이 index값이 됨
 print(s5)
+'''
+국어    100
+영어     95
+수학    100
+dtype: int64
+'''
