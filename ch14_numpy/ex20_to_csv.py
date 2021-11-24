@@ -36,7 +36,7 @@ ID_3      55     160  21.484375
 ID_4      74     180  22.839506
 '''
 
-df_WH.to_csv('D:\dev\workspace\python\ch14_numpy\save_DataFrame.csv')
+df_WH.to_csv('/Users/iwonmin/Desktop/python/ch14_numpy/save_DataFrame.csv') #csv 파일 생성
 
 df_pr = pd.DataFrame({'판매가격': [2000, 3000, 5000, 10000],
                       '판매량': [32, 53, 40, 25]},
@@ -52,5 +52,5 @@ P1003   5000   40
 P1004  10000   25
 '''
 
-file_name = 'D:\dev\workspace\python\ch14_numpy\save_DataFrame_utf-8.txt'
+file_name = '/Users/iwonmin/Desktop/python/ch14_numpy/save_DataFrame_utf-8.txt' #txt 파일 생성
 df_pr.to_csv(file_name, sep=" ", encoding="utf-8")

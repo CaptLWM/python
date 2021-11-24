@@ -1,6 +1,6 @@
 import pandas as pd
 
-print(pd.read_csv('D:\dev\workspace\python\ch14_numpy\sea_rain1.csv'))
+print(pd.read_csv('/Users/iwonmin/Desktop/python/ch14_numpy/sea_rain1.csv')) # 맥이랑 윈도우 저장경로 다르므로 주의할것
 '''
      연도       동해       남해       서해       전체
 0  1996  17.4629  17.2288  14.4360  15.9067
@@ -10,7 +10,7 @@ print(pd.read_csv('D:\dev\workspace\python\ch14_numpy\sea_rain1.csv'))
 4  2000  17.9288  18.1766  15.0504  16.6178
 '''
 
-print(pd.read_csv('D:\dev\workspace\python\ch14_numpy\sea_rain1.csv', index_col="연도"))
+print(pd.read_csv('/Users/iwonmin/Desktop/python/ch14_numpy/sea_rain1.csv', index_col="연도")) # 맥이랑 윈도우 저장경로 다르므로 주의할것
 '''
           동해       남해       서해       전체
 연도
