@@ -16,7 +16,10 @@ plt.plot(x,y1,x,y2,x,y3)
 #plt.show()
 
 plt.plot(x,y1) # 처음 그리기 함수를 수행하면 그래프 창이 자동으로 생성된다
+'''figure1'''
 plt.figure() # 새로운 그래프 창을 생성한다
-
 plt.plot(x,y2)
+'''figure2'''
 plt.show()
+# 지금까지 만들어 놓은 모든 그래프 표시
+# plt.figure()로 새창 만드는게 좋음
