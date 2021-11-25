@@ -48,7 +48,7 @@ df.to_excel(excel_writer, index=True, sheet_name='Sheet1')
 worksheet = excel_writer.sheets['Sheet1']
 
 # (4) 워크시트에 차트가 들어갈 위치를 지정해 이미지 넣기
-worksheet.insert_image('D2', image_file, {'x_scale': 0.7, 'y_scale': 0.7})
+worksheet.insert_image('D2', image_file, {'x_scale': 0.7, 'y_scale': 0.7}) #D2=>엑셀 위치
 # worksheet.insert_image(1, 3, image_file, {'x_scale': 0.7, 'y_scale': 0.7})
 
 # (5) ExcelWriter 객체를 닫고 엑셀 파일 출력
