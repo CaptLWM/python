@@ -2,7 +2,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import pandas as pd
 
-matplotlib.rcParams['font.family'] = 'Malgun Gothic'   # '맑은 고딕'으로 설정
+matplotlib.rcParams['font.family'] = 'AppleGothic'   # '맑은 고딕'으로 설정
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 fruit = ['사과', '바나나', '딸기', '오렌지', '포도']

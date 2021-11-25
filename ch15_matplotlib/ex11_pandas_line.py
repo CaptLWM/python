@@ -1,5 +1,8 @@
+import matplotlib
 import pandas as pd
 import matplotlib.pyplot as plt
+matplotlib.rcParams['font.family'] = 'AppleGothic'   # '맑은 고딕'으로 설정
+matplotlib.rcParams['axes.unicode_minus'] = False
 
 s1 = pd.Series([1,2,3,4,5,6,7,8,9,10])
 print(s1)
@@ -43,7 +46,7 @@ s2.plot(grid=True)
 plt.show()
 
 
-df_rain = pd.read_csv('D:\dev\workspace\python\ch14_numpy\sea_rain1.csv', index_col="연도" )
+df_rain = pd.read_csv('/Users/iwonmin/Desktop/python/ch14_numpy/sea_rain1.csv', index_col="연도" )
 print(df_rain)
 '''
            동해       남해       서해       전체

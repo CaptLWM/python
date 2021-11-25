@@ -2,7 +2,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import pandas as pd
 
-matplotlib.rcParams['font.family'] = 'Malgun Gothic'   # '맑은 고딕'으로 설정
+matplotlib.rcParams['font.family'] = 'AppleGothic'   # '맑은 고딕'으로 설정
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 temperature = [25.2, 27.4, 22.9, 26.2, 29.5, 33.1, 30.4, 36.1, 34.4, 29.1]

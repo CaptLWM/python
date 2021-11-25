@@ -23,8 +23,8 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.title('Saving a figure')
 
-# 그래프를 이미지 파일로 저장. dpi는 100으로 설정
-plt.savefig('d:\dev\workspace\python\ch15_matplotlib\saveFigTest1.png', dpi=100)
+# 그래프를 이미지 파일로 저장. dpi는 100으로 설정(해상도)
+plt.savefig('/Users/iwonmin/Desktop/python/ch15_matplotlib/saveFigTest1.png', dpi=100)
 plt.show()
 
 
@@ -37,5 +37,5 @@ plt.pie(result, labels=fruit, autopct='%.1f%%', startangle=90,
         counterclock=False, explode=explode_value, shadow=True)
 
 # 그래프를 이미지 파일로 저장. dpi는 200으로 설정
-plt.savefig('d:\dev\workspace\python\ch15_matplotlib\saveFigTest2.png', dpi=200)
+plt.savefig('/Users/iwonmin/Desktop/python/ch15_matplotlib/saveFigTest2.png', dpi=200)
 plt.show()
