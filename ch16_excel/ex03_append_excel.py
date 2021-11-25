@@ -1,4 +1,3 @@
-import glob # 내가 원하는 경로 지정해서 파일 리스트 불러오기
 import pandas as pd
 excel_data_files = ['/Users/iwonmin/Desktop/python/ch16_excel/담당자별_판매량_Andy사원.xlsx',
                     '/Users/iwonmin/Desktop/python/ch16_excel/담당자별_판매량_Becky사원.xlsx',
@@ -28,7 +27,7 @@ total_data = pd.DataFrame()
 
 for f in excel_data_files:
     df = pd.read_excel(f)
-    total_data = total_data.append(df, ignore_index=True) # ignore_index : 기존 인덱스에 이어지게끔
+    total_data = total_data.append(df, ignore_index=True)
 
 print(total_data)
 '''
@@ -43,9 +42,9 @@ print(total_data)
 7   구두   C  다  231  279  277  292
 8  핸드백   C  다  365  383  308  323
 '''
-
-
-print(glob.glob("/Users/iwonmin/Desktop/python/ch16_excel/담당자별_판매량_*사원.xlsx"))
+######################
+import glob
+print(glob.glob("/Users/iwonmin/Desktop/python/ch16_excel/담당자별_판매량_* 사원.xlsx"))
 '''
 ['./ch16_excel\\담당자별_판매량_Andy사원.xlsx', './ch16_excel\\담당자별_판매량_Becky사
 원.xlsx', './ch16_excel\\담당자별_판매량_Chris사원.xlsx']
@@ -73,7 +72,7 @@ print(total_data1)
 8  핸드백   C  다  365  383  308  323
 '''
 
-excel_file_name = '/Users/iwonmin/Desktop/python/ch16_excel/담당자별_판매량_통합1.xlsx'
+excel_file_name = '/Users/iwonmin/Desktop/python/ch16_excel/담당자별_판매량_통합22.xlsx'
 
 excel_total_file_writer = pd.ExcelWriter(excel_file_name, engine='xlsxwriter')
 total_data1.to_excel(excel_total_file_writer, index=False, sheet_name='담당자별_판매량_통합')
