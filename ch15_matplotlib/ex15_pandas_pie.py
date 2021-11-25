@@ -30,5 +30,5 @@ fruit_pie.set_ylabel("")  # 불필요한 y축 라벨 제거
 fruit_pie.set_title("과일 선호도 조사 결과")
 
 # 그래프를 이미지 파일로 저장. dpi는 200으로 설정
-plt.savefig('d:\dev\workspace\python\ch15_matplotlib\saveFigTest3.png', dpi=200)
+plt.savefig('/Users/iwonmin/Desktop/python/ch15_matplotlib/saveFigTest3.png', dpi=200)
 plt.show()
