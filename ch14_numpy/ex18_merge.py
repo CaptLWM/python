@@ -33,4 +33,4 @@ print(df_right)
 
 print(df_left.merge(df_right, how='left', on='key'))
 
-print(df_right.merge(df_right, how='outer',ron='key'))
+print(df_right.merge(df_right, how='outer',on='key'))

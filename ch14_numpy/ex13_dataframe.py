@@ -56,7 +56,7 @@ print(pd.DataFrame(table_data))
 4  2017  미국   500
 '''
 
-df = pd.DataFrame(table_data, columns=['연도', '지사', '고객 수'])
+df = pd.DataFrame(table_data, columns=['연도', '지사'])
 print(df)
 '''
      연도  지사  고객 수
