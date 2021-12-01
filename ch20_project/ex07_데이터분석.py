@@ -78,7 +78,7 @@ print(year_expense)
 Name: 집행연도, dtype: int64
 '''
 
-matplotlib.rcParams['font.family'] = 'Malgun Gothic'
+matplotlib.rcParams['font.family'] = 'AppleGothic'
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 plt.bar(year_expense.index, year_expense.values,
@@ -93,7 +93,7 @@ year_total = pd.pivot_table(df_expense_all, index=[
                             '집행연도'], values=['집행금액'], aggfunc=sum)
 print(year_total)
 '''
-             집행금액
+             집행금액 #총금액
 집행연도
 2017   9076941387
 2018   9937556542
@@ -128,7 +128,7 @@ print(month_total)
 '''
 
 year_month_total = pd.pivot_table(df_expense_all, index=['집행월'], columns=['집행연도'],
-                                  values=['집행금액'], aggfunc=sum)
+                                  values=['집행금액'], aggfunc=sum) #fivot 적용, 테이블 재구성
 print(year_month_total)
 '''
             집행금액
@@ -148,7 +148,7 @@ print(year_month_total)
 12    1225747394  1532116522  1463269451
 '''
 
-eok_won = 100000000  # 억원
+eok_won = 100000000  # 억원, 단위 바꿔줌
 
 (year_month_total/eok_won).plot.bar(rot=0)
 plt.ylabel('집행금액(억원)')
