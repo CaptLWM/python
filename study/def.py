@@ -21,7 +21,7 @@ print_kwargs(name="Alice", age=30, city="New York")
 def add_and_multiply(a, b):
     return (a + b) , a*b
 
-result4, result5 = add_and_multiply(3, 5);
+result4, result5 = add_and_multiply(3, 5)
 print(f"result4 : {result4}, result5 : {result5}")
 
 def say_myself(name, age, man=True): # name, man=True, age => 안됨, 초기화 하고 싶은 매개변수는 항상 뒤에
