@@ -18,3 +18,6 @@ d = ["apple", "banana", "cherry"]
 e = ["sweet", "yellow", "red"]
 for fruit, color in zip(d, e):
     print(f"{fruit} is {color}")
+
+f = [1,2,3,4]
+g = [num * 3 for num in f if num % 2 == 0]
